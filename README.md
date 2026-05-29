@@ -196,6 +196,49 @@ The website includes the following pages:
 5. Use the navigation bar to move between pages.
 
 ---
+# REFERENCES
+
+## Images
+
+* Unsplash. Available at: https://unsplash.com/
+* Pexels. Available at: https://www.pexels.com/
+* Pixabay. Available at: https://pixabay.com/
+
+---
+
+## Fonts
+
+* Google Fonts – Poppins Font. Available at: https://fonts.google.com/
+
+---
+
+## HTML & CSS Learning Resources
+
+* W3Schools HTML Tutorial. Available at: https://www.w3schools.com/html/
+* W3Schools CSS Tutorial. Available at: https://www.w3schools.com/css/
+* MDN Web Docs – HTML. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
+* MDN Web Docs – CSS. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+---
+
+## Responsive Design Resources
+
+* CSS Flexbox Guide. Available at: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* Responsive Web Design Basics. Available at: https://web.dev/responsive-web-design-basics/
+
+---
+
+## Visual Design Inspiration
+
+* Pinterest Web Design Inspiration. Available at: https://www.pinterest.com/
+* Dribbble Design Inspiration. Available at: https://dribbble.com/
+
+---
+
+## Development Software
+
+* Visual Studio Code. Available at: https://code.visualstudio.com/
+* Google Chrome Browser. Available at: https://www.google.com/chrome/
 
 # AUTHOR
 
