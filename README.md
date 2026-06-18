@@ -6,7 +6,7 @@ learn about the business, send an enquiry, and contact the store.
 
 ## Live Website
 
-[View the live site]()
+[View the live site]
 
 
 ## Pages
@@ -47,11 +47,7 @@ The website was tested across multiple screen sizes to confirm a responsive layo
 
 ![Mobile view of the Come Rain or Shine website]![alt text](<screenshot-mobile..png>)
 
-## How to Deploy
 
-1. Push the project to a GitHub repository.
-2. Deploy using Netlify or GitHub Pages.
-3. Update the live link above and the URLs inside `sitemap.xml`.
 
 ---
 
