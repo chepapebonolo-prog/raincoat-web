@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO: title and description -->
+    <title>Contact Us | Come Rain or Shine</title>
+    <meta name="description" content="Get in touch with Come Rain or Shine. Find our email, phone, address and business hours, or send us a message.">
+
+    <!-- Stylesheet (must be in the head) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <img src="image2/umbrella.jpg" alt="Come Rain or Shine logo" class="logo">
+
+    <!-- Main heading (only ONE h1 per page) -->
+    <h1>Contact Us</h1>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="enquiry.html">Any Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact details -->
+    <section>
+        <h2>Get In Touch</h2>
+        <p>Email: comerainorshine@yahoo.com</p>
+        <p>Phone: 081 774 2345</p>
+        <p>Address: 25 Rainy Street, Johannesburg</p>
+    </section>
+
+    <!-- Business hours -->
+    <section>
+        <h2>Business Hours</h2>
+        <ul>
+            <li>Monday – Friday: 08:00 – 17:00</li>
+            <li>Saturday: 09:00 – 14:00</li>
+            <li>Sunday: Closed</li>
+        </ul>
+    </section>
+
+    <!-- Contact form (validated by script.js before sending) -->
+    <section>
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm" novalidate>
+
+            <label for="cName">Your Name</label>
+            <input type="text" id="cName" placeholder="Enter your name" required>
+            <span class="error" id="cNameError"></span>
+
+            <label for="cEmail">Your Email</label>
+            <input type="email" id="cEmail" placeholder="Enter your email" required>
+            <span class="error" id="cEmailError"></span>
+
+            <label for="cType">Type of Message</label>
+            <select id="cType" required>
+                <option value="">-- Please choose --</option>
+                <option value="General">General Enquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+            <span class="error" id="cTypeError"></span>
+
+            <label for="cMessage">Your Message</label>
+            <textarea id="cMessage" placeholder="Type your message here..." required></textarea>
+            <span class="error" id="cMessageError"></span>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Success / error message appears here -->
+        <div id="contactResponse"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Come Rain Or Shine. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript loaded at the end -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,247 +1,101 @@
-# COME RAIN OR SHINE – WEBSITE PROJECT
+# Come Rain or Shine
 
-## PROJECT DESCRIPTION
+A retail website for "Come Rain or Shine", a store selling colourful, stylish
+raincoats, jackets, umbrellas and rainboots. Visitors can browse products,
+learn about the business, send an enquiry, and contact the store.
 
-For my Website Development module, I created a multi-page website for a raincoat business called **COME RAIN OR SHINE**.
+## Live Website
 
-The purpose of the website is to promote stylish and durable raincoats while giving customers an easy and enjoyable online browsing experience.
+[View the live site]()
 
-The design is modern, colourful, visually appealing, and user-friendly to reflect the fun and practical nature of the brand.
 
-The website uses a soft pastel theme with butter yellow, baby blue, and white colours to create a clean and high-end appearance.
+## Pages
 
----
+- `index.html` — Home page with a welcome hero and introduction
+- `about.html` — About the business, including mission and vision
+- `services.html` — Product price list shown as interactive, clickable cards
+- `contact.html` — Contact details, business hours and a contact form
+- `enquiry.html` — Enquiry form that returns cost/availability responses
 
-# STUDENT DETAILS
+## Features
 
-**NAME:** Bonolo Chepape
-**STUDENT NUMBER:** ST10525773
+- Fully responsive design (phone, tablet and desktop)
+- Interactive product cards with hover effects (lift and image zoom)
+- Contact form with JavaScript validation that compiles a message into an email
+- Enquiry form with JavaScript validation that returns a cost/availability response
+- SEO basics: meta descriptions, alt text, clean URLs and a sitemap
 
----
+## Technologies Used
 
-# TECHNICAL FEATURES
+- HTML5
+- CSS3 (Flexbox, media queries, animations)
+- JavaScript (form validation, DOM manipulation)
 
-## Semantic HTML
+## Responsive Design Screenshots
 
-Semantic HTML was used to structure the website clearly using tags such as:
+The website was tested across multiple screen sizes to confirm a responsive layout.
 
-* `<header>`
-* `<nav>`
-* `<section>`
-* `<footer>`
+**Desktop**
 
----
+![Desktop view of the Come Rain or Shine website]![alt text](<screenshot-desktop.png>)
 
-# CSS FEATURES
+**Tablet (iPad)**
 
-The website uses external CSS styling to improve the appearance, responsiveness, and overall user experience across all pages.
+![Tablet view of the Come Rain or Shine website]![alt text](<screenshot-tablet.png>)
 
-## Design Features Included
+**Mobile (iPhone)**
 
-* Modern pastel colour palette
-* Butter yellow, baby blue, and white theme
-* Responsive layouts
-* Responsive images
-* Flexbox layouts
-* Media queries
-* Hover effects
-* Smooth transitions
-* Animated visual effects
-* Glassmorphism design elements
-* Rounded corners
-* Shadows and depth effects
-* Gradient backgrounds
-* Interactive buttons
-* Responsive navigation bar
+![Mobile view of the Come Rain or Shine website]![alt text](<screenshot-mobile..png>)
 
----
+## How to Deploy
 
-# RESPONSIVE DESIGN
-
-The website is fully responsive and adapts to different screen sizes including:
-
-* Desktop
-* Tablet
-* Mobile devices
-
-The project uses:
-
-* Media queries
-* Percentage units (`%`)
-* Relative units (`rem` and `em`)
-* Flexible layouts using Flexbox
-
-to ensure the website works correctly on all devices.
+1. Push the project to a GitHub repository.
+2. Deploy using Netlify or GitHub Pages.
+3. Update the live link above and the URLs inside `sitemap.xml`.
 
 ---
 
-# IMAGE RESPONSIVENESS
+## Changelog
 
-Images automatically resize depending on screen size using responsive CSS properties such as:
+### Part 3 — Enhancing Functionality and SEO
 
-```css id="u29sj1"
-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-```
+**Worked through Part 2 feedback (responsive design):**
+- Removed all inline styles from every page so the external CSS and media queries control the layout. This addressed the layout, typography, navigation and image responsiveness issues raised in Part 2.
+- Rebuilt every navigation menu as an unordered list (`<ul>`) so it stacks vertically and stays readable on mobile screens.
+- Wrapped page content in semantic `<section>` elements so the responsive section styling applies correctly.
 
-The hero image on the homepage was also resized and styled to better fit the modern pastel aesthetic of the website.
+**Worked through Part 1 feedback:**
+- Added a `sitemap.xml` file listing all five pages so search engines can index the site (Part 1 noted that no sitemap was provided).
+- Added comments throughout the HTML, CSS and JavaScript to explain the structure and decisions (Part 1 noted that the code lacked comments).
 
----
+**JavaScript functionality added (`script.js`):**
+- Built a contact form with validation (name, email, message type, message). Invalid input shows on-screen error messages; valid input is compiled into an email addressed to the store.
+- Built an enquiry form with validation that, once submitted, displays a response about cost and availability based on the user's selection.
+- Added interactive, clickable product cards with hover effects on the services page.
 
-# VISUAL EFFECTS
+**SEO improvements:**
+- Added a unique title and meta description to every page.
+- Added descriptive alt text to all images.
+- Renamed page files to clean, lowercase, space-free names (`about.html`, `services.html`, `contact.html`) to fix broken links and create SEO-friendly URLs.
+- Created `sitemap.xml` and `robots.txt` to support search engine indexing.
 
-Additional visual effects were added to improve the overall appearance and professionalism of the website, including:
-
-* Hover effects on buttons
-* Hover effects on images
-* Hover effects on cards and sections
-* Background glow effects
-* Smooth animations
-* Gradient colour styling
-* Shadow effects for depth
-* Soft blurred background elements
-
-These effects create a modern and visually appealing user experience.
-
----
-# WEBSITE RESPONSIVENESS PREVIEW
-
-The website was designed to be fully responsive and user-friendly across different screen sizes and devices.
-
-## Desktop View
-
-The desktop version displays:
-
-* Full navigation menu
-* Large hero image
-* Multi-column card layouts
-* Spacious sections and content areas
-* Full visual effects and animations
-
-### Desktop Screenshot
-
-[alt text](<ReadmeScreenshot (standard desktop).png>)
+**Bug fixes:**
+- Fixed broken `<link>` stylesheet tags and moved them into the `<head>`.
+- Fixed an invalid `<body>` tag on the home page.
+- Removed a duplicate `<h1>` on the contact page.
+- Moved `script.js` into the main project folder so it loads correctly on every page.
 
 ---
 
-## Tablet / iPad View
+## References
 
-The tablet version automatically adjusts the layout for medium screen sizes by:
+The following resources were used in the development of this website:
 
-* Stacking some content vertically
-* Resizing images proportionally
-* Adjusting spacing and font sizes
-* Maintaining responsive navigation
+- Google Fonts. 2026. *Poppins.* [Online] Available at: https://fonts.google.com/specimen/Poppins [Accessed 18 June 2026].
+- Mozilla Developer Network (MDN). 2026. *Client-side form validation.* [Online] Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation [Accessed 18 June 2026].
+- W3Schools. 2026. *HTML Forms.* [Online] Available at: https://www.w3schools.com/html/html_forms.asp [Accessed 18 June 2026].
+- Sitemaps.org. 2026. *XML Sitemaps Protocol.* [Online] Available at: https://www.sitemaps.org [Accessed 18 June 2026].
 
-###!Tablet / iPad Screenshot
-[alt text](<ReadmeScreenshot (ipad).png>) 
+## Author
 
-
----
-
-## Mobile / iPhone View
-
-The mobile version is optimized for smaller screens by:
-
-* Stacking content vertically
-* Resizing headings and paragraphs
-* Making buttons fully responsive
-* Displaying mobile-friendly navigation
-* Ensuring images scale correctly
-
-### Mobile / iPhone Screenshot
-![alt text](<ReadmeScreenshot (iphone)-1.png>)
-
----
-
-# RESPONSIVE DESIGN FEATURES
-
-The following responsive design techniques were used throughout the website:
-
-* Media queries
-* Flexbox
-* Percentage widths (`%`)
-* Relative sizing units (`rem` and `em`)
-* Responsive images
-* Flexible layouts for all devices
-
-These features ensure the website provides a consistent and visually appealing experience on desktop, tablet, and mobile devices.
-
-# MULTI-PAGE WEBSITE
-
-The website includes the following pages:
-
-* `index.html` – Home Page
-* `about us.html` – About Us Page
-* `services.html` – Services Page
-* `contact us.html` – Contact Us Page
-* `enquiries.html` – Enquiries Page
-
----
-
-# HOW TO RUN THE WEBSITE
-
-1. Download or open the project folder in Visual Studio Code.
-2. Ensure all HTML files and the CSS file are stored in the same project folder.
-3. Link the CSS file to all HTML pages using:
-
-```html id="h73sj2"
-<link rel="stylesheet" href="style.css">
-```
-
-4. Open `index.html` in any web browser.
-5. Use the navigation bar to move between pages.
-
----
-# REFERENCES
-
-## Images
-
-* Unsplash. Available at: https://unsplash.com/
-* Pexels. Available at: https://www.pexels.com/
-* Pixabay. Available at: https://pixabay.com/
-
----
-
-## Fonts
-
-* Google Fonts – Poppins Font. Available at: https://fonts.google.com/
-
----
-
-## HTML & CSS Learning Resources
-
-* W3Schools HTML Tutorial. Available at: https://www.w3schools.com/html/
-* W3Schools CSS Tutorial. Available at: https://www.w3schools.com/css/
-* MDN Web Docs – HTML. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML
-* MDN Web Docs – CSS. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS
-
----
-
-## Responsive Design Resources
-
-* CSS Flexbox Guide. Available at: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-* Responsive Web Design Basics. Available at: https://web.dev/responsive-web-design-basics/
-
----
-
-## Visual Design Inspiration
-
-* Pinterest Web Design Inspiration. Available at: https://www.pinterest.com/
-* Dribbble Design Inspiration. Available at: https://dribbble.com/
-
----
-
-## Development Software
-
-* Visual Studio Code. Available at: https://code.visualstudio.com/
-* Google Chrome Browser. Available at: https://www.google.com/chrome/
-
-# AUTHOR
-
-**Bonolo Chepape**
-Website Development Project
-COME RAIN OR SHINE
+[Bonolo Chepape ST10525773] — Web Development (Introduction) WEDE5020, IIE

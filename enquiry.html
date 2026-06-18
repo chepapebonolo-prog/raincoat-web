@@ -3,33 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <link rel="stylesheet" href="css/style.css"
-<img src="image2/umbrella.jpg" style="width: 100px"><span style="font-size: 100%;"></span>
 
-    <h1 style="text-align: center;">Any Enquiry</h1>
-    <nav style="text-align: center;">
-   <a href="index.html">Home</a>  |
-   <a href="about us.html">About Us</a>  |
-   <a href="our services.html">Our services</a>|
-   <a href="contact us.html">Contact us</a>|
-   <a href="enquiry.html">Any Enquiry</a>
-    </nav><br><br><br>
-    
-    <div style="border: 1px solid black;width: 50%;margin: auto;padding: 20px;text-align: left;">
-        <p><b>For any questions or help,contact us</b></p>
-        <p></Phone:0187743456></p>
-<p>You Can:</p>
-<ul>
-    <li>Send us an email for product enquiries</li>
-    <li>call our store for quick assistance</li>
-    <li>Visit us during business hours</li>
-</ul>
-    </div>
-<footer><br><br><br>
-    <p>&copy;Come Rain Or Shine.All rights reserved</p>
-</footer>
+    <!-- SEO: title and description -->
+    <title>Any Enquiry | Come Rain or Shine</title>
+    <meta name="description" content="Enquire about our raincoats, umbrellas, volunteering or sponsorship at Come Rain or Shine and get a quick response on cost and availability.">
+
+    <!-- Stylesheet (must be in the head) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <img src="image2/umbrella.jpg" alt="Come Rain or Shine logo" class="logo">
+
+    <!-- Main heading -->
+    <h1>Any Enquiry</h1>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="enquiry.html">Any Enquiry</a></li>
+        </ul>
+    </nav>
+
+    <!-- Enquiry form section -->
+    <section>
+        <h2>Make an Enquiry</h2>
+        <p>
+            Want to know more about our products, services, volunteering or sponsorship?
+            Fill in the form below and we'll get back to you with details on cost and availability.
+        </p>
+
+        <!-- This form is validated by script.js, then shows a response -->
+        <form id="enquiryForm" novalidate>
+
+            <label for="enqName">Your Name</label>
+            <input type="text" id="enqName" placeholder="Enter your name" required>
+            <span class="error" id="enqNameError"></span>
+
+            <label for="enqEmail">Your Email</label>
+            <input type="email" id="enqEmail" placeholder="Enter your email" required>
+            <span class="error" id="enqEmailError"></span>
+
+            <label for="enqType">I'm enquiring about</label>
+            <select id="enqType" required>
+                <option value="">-- Please choose --</option>
+                <option value="service">A Service</option>
+                <option value="product">A Product</option>
+                <option value="volunteer">Volunteering</option>
+                <option value="sponsor">Sponsoring</option>
+            </select>
+            <span class="error" id="enqTypeError"></span>
+
+            <label for="enqMessage">Your Message</label>
+            <textarea id="enqMessage" placeholder="Tell us what you'd like to know..." required></textarea>
+            <span class="error" id="enqMessageError"></span>
+
+            <button type="submit">Send Enquiry</button>
+        </form>
+
+        <!-- The cost / availability response appears here -->
+        <div id="enquiryResponse"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Come Rain Or Shine. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript loaded at the end -->
+    <script src="script.js"></script>
+
 </body>
 </html>

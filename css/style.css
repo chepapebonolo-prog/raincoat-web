@@ -350,3 +350,98 @@ footer {
         border-radius: 1.5rem;
     }
 }
+/* =========================
+   LOGO
+========================= */
+.logo {
+    width: 80px;
+    margin: 1rem auto;
+}
+
+/* =========================
+   PRODUCT LIST & IMAGES
+========================= */
+.product-list li {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.product-img {
+    width: 100%;        /* shrinks on small screens */
+    max-width: 250px;   /* but never gets too large */
+    margin: 0.8rem 0;
+    border-radius: 1.5rem;
+}
+/* =========================
+   CLICKABLE PRODUCT CARDS
+========================= */
+.product-card {
+    text-decoration: none;   /* removes the link underline */
+    color: inherit;          /* keeps normal text colour */
+    display: block;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;        /* keeps all product images the same size */
+    margin-bottom: 1rem;
+    border-radius: 1.5rem;
+    transition: 0.4s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);   /* image zooms in slightly on hover */
+}
+
+.price {
+    color: #89CFF0;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+/* =========================
+   FORMS
+========================= */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+form label {
+    font-weight: 500;
+    margin-top: 0.6rem;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cce;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    min-height: 1rem;
+}
+
+#contactResponse,
+#enquiryResponse {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+}
